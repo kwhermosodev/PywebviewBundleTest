@@ -19,6 +19,7 @@ def bundle_project(str_project_name):
     pyinstaller_cmd = [
         f'{str_pyinstaller_path}',
         '--onedir',
+        '--debug=all',
         #'--noconsole',
         f'--distpath={str_dist_path}',
         f'--workpath={str_build_path}',
